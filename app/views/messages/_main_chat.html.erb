@@ -1,0 +1,29 @@
+<div class="main-header">
+<div class="main-left-header">
+    <div class="main-header-title">
+      <%= @room.name %>
+    </div>
+  </div>
+  <div class="main-right-header">
+    <div class="main-header-button">
+      <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
+    </div>
+  </div>
+</div>
+
+<div class="main-chat-list">
+<%= render partial: 'message', collection: @messages %>
+</div>
+
+
+<%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+    <div class="type-message">
+        <%= f.text_field :content, class: 'text-message', placeholder: 'type a message' %>
+        <label class="form-image">
+            <span class="image-file">画像</span>
+            <%= f.file_field :image, class: 'hidden' %>
+        </label>
+    </div>
+    <%= f.submit '送信', class: 'form-send' %>
+<% end %>
+</div>

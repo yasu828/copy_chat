@@ -1,0 +1,148 @@
+/* 大枠 */
+.wrapper{
+    display: flex;
+}
+.side-bar{
+    width: 300px;
+    height: 100vh;
+    background-color: #233141;
+}
+.main-chat{
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+}
+.form{
+    background-color: #dddddd;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+}
+
+/* ここからサイドバー */
+
+.Editlink{
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* .user-name{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+} */
+.create-chat a{
+    color: deepskyblue;
+    font-size: 10px;
+    padding: 14px;
+    border: 1px solid lightblue;
+    text-decoration: none;
+}
+.room{
+    padding: 20px 0 40px;
+}
+.side-room-name a{
+    text-decoration: none;
+    color: pink;
+}
+.side-header{
+    height: 100px;
+    padding: 0 20px;
+    background-color: #253141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-rooms{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+}
+
+/* ここからメイン */
+
+.main-chat-list{
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+    padding: 46px 40px 0;
+    overflow: scroll;
+}
+
+.main-header{
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: violet;
+}
+.main-header-title {
+    color: #333;
+    font-size: 24px;
+    margin-top: 36px;
+} 
+.main-header-button {
+    margin-top: 40px;
+}
+.main-header-button a {
+    text-decoration: none;
+    border: 1px solid darkred;
+    color: darkred;
+    padding: 20px;
+}
+
+.massege{
+    margin: 10px 0 0 0;
+}
+.main-upper-message{
+    display: flex;
+}
+.main-message-user{
+    color: #434a54;
+    font-size: 16px;
+}
+.main-date{
+    color: #999;
+    font-size: 12pxz;
+    padding-left: 10px;
+}
+.main-under-message{
+    margin-top: 10px;
+}
+.main-sentence{
+    font-size: 14px;
+    color: #434a54;
+    margin-bottom: 40px;
+}
+.type-message{
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+.text-message{
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+}
+.form-send{
+    background-color: #38AEF0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 20px;  
+}
+.form-image {
+    font-size: 12px;
+    background-color: lightblue;
+    color: white;
+    padding: 12px;
+    width: 60px;
+    margin: 5px 10px;
+    text-align: center;
+}
+  
+.hidden {
+    display: none;
+}

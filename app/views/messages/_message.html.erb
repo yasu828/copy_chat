@@ -1,0 +1,16 @@
+<div class="message">
+    <div class="main-upper-message">
+        <div class="main-message-user">
+            <%= message.user.name %>
+        </div>
+        <div class="main-date">
+            <%= l message.created_at %>
+        </div>
+    </div>
+    <div class="main-under-message">
+        <div class="main-sentence">
+            <%= message.content %>
+        </div>
+        <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+    </div>
+</div>
